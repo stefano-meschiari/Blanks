@@ -1,0 +1,122 @@
+html, body, h1, h2, h3, h4, h5 {
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:20px;
+  line-height:1.2;
+}
+
+textarea {
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#brand {
+  font-size:3rem;
+  text-align:center;
+  font-weight:700;
+  padding:30px;
+}
+
+.presentation {
+  font-weight:100;
+  font-size:1.5rem;
+  text-align:center;
+}
+#icon {
+  background: black;
+  color:white;
+  border-radius:100px;
+  width:200px;
+  height:200px;
+  line-height:200px;
+  font-size:100px;
+  text-align:center;
+}
+.icon-container {
+  text-align:center;
+}
+
+.input {
+  border:none;
+  outline:none;
+  display:block;
+  font-weight:100;
+  font-size:1.5rem;
+  width:100%;
+}
+
+.input-container {
+  border:1px solid black;
+  margin:10px;
+  padding:10px;
+}
+.input-container .fa {
+  display:block;
+  float:left;
+}
+.aside {
+  font-size: 0.75rem;
+  color:silver;
+}
+#drbowties {
+  margin:5px;
+}
+
+h2 {
+  font-weight:bold;
+  color:inherit;
+}
+
+#next {
+}
+
+#wiki-title {
+  font-weight:bold;
+  font-size:2rem;
+}
+
+#wiki-content {
+  font-size:1.5rem;
+}
+#wiki-content input {
+  font-size:1.5rem;
+  background: rgb(230, 230, 230);
+  border:1px solid silver;
+}
+
+.wrong {
+  color:red;
+}
+
+.right {
+  color:green;
+}
+
+#counter {
+  font-size:3rem;
+  text-align:center;
+}
+
+.msg {
+  text-align:center;
+  margin-top:30px;
+  margin-bottom:50px;
+  font-size:2rem;
+  padding-bottom:50px;
+  border-bottom:1px solid silver;
+  
+}
+.msg button {
+  font-size:2rem !important;
+  padding:10px !important;
+}
+.level-container {
+  font-size:1.5rem;
+  border-bottom:1px solid silver;
+  padding-bottom:10px;
+  margin-bottom:20px;
+}
+#level {
+  font-weight:900;
+}
+
+.icon {
+  font-size:5rem;
+}

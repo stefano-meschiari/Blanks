@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	  <head>
+		    <title>Wiki-Blanks</title>
+
+        <meta property="og:url" content="http://www.stefanom.org/exp/blanks/">
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="Wiki-Blanks">
+        <meta property="og:image" content="http://www.stefanom.org/exp/blanks/fb.png">
+        <meta property="og:description" content="Experiment # 2/30: A Game of Fill-In-The-Blanks">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/css/uikit.min.css" />
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Dosis:200,400,600' rel='stylesheet' type='text/css'>
+		    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+		    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/js/uikit.min.js"></script>
+        <script src="js/blanks.js?v=3"></script>
+        <script src="//use.typekit.net/mtc3qbz.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47960829-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+        <link rel="stylesheet" href="css/style.css">
+	  </head>
+	  <body>
+
+        <nav class="uk-navbar">
+            <div class="uk-navbar-flip">
+                <ul class="uk-navbar-nav">
+                    <a class="uk-button uk-button-success" id="drbowties" href="http://www.stefanom.org">Made by drbowties</a>
+                </ul>
+            </div>
+        </nav>
+        
+		    <br>
+
+		    <div class="uk-container uk-container-center">
+            <div id="success" class="msg">
+                <div class="icon">
+                    <span class="fa fa-graduation-cap"></span>
+                </div>
+                Congrats, you got them all right! Press <button class="uk-button uk-button-success uk-width-1-1" id="next">NEXT LEVEL</button>
+ to continue.
+            </div>
+            <div id="failure" class="msg">
+                <div class="icon">
+                    <span class="fa fa-frown-o"></span>
+                </div>
+
+                Darn, you didn't clear the level! Press <button class="uk-button uk-button-danger uk-button-large uk-width-1-1" id="retry" onClick="location.reload()">RETRY LEVEL</button> to retry the level.                
+            </div>
+            <div class="uk-grid">
+                <div class="uk-width-1-3">
+                    <div class="uk-panel uk-panel-box">
+                        <div class="uk-clearfix level-container">
+                            <div class="uk-float-left">Level:</div><div id="level" class="uk-float-right">1</div>
+                        </div>
+                        <button class="uk-button uk-button-danger uk-button-large uk-width-1-1" id="play">PLAY!</button>
+                        <button class="uk-button uk-button-primary uk-button-large uk-width-1-1" id="submit">SUBMIT YOUR ANSWERS!</button>
+                                               
+                        <div id="counter"></div>
+                        <button class="uk-button uk-button-primary uk-button-large uk-width-1-1" id="skip">SKIP TIMER</button>                        
+                    </div>
+                    <div id="howto" class="uk-panel uk-panel-box uk-panel-box-primary">
+                        <h2>How to play</h2>
+                        <p>
+                            The game pulls a random Wikipedia article and displays it for a short
+                            amount of time. After that time, the words are blanked out. The goal
+                            of the game is to fill the blanks correctly!
+                        </p>
+                        <p>
+                            Try to clear out as many levels as you can &mdash; as you progress,
+                            more words are blanked out.
+                        </p>
+                        <p>
+                            Feeling overwhelmed? You can <a href="index.html">restart from Level 1</a>.
+                        </p>
+                    </div>
+                </div>
+                <div class="uk-width-2-3">
+                    <div id="wiki-title">
+                    </div>
+                    <div id="wiki-content">
+                    </div>
+                </div>
+		        </div>
+        </div>
+	  </body>
+</html>
